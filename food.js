@@ -1,4 +1,4 @@
-/* A note to keep in mind is that CSS grid starts at 1, not 0 so in this project we need everything to be between 1 and 27 */
+/* A note to keep in mind is that CSS grid starts at 1, not 0 so in this project we need everything to be between 1 and 29 */
 import { onSnake, expandSnake } from "./snake.js";
 import { randomGridPosition } from "./grid.js";
 
