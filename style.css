@@ -42,12 +42,12 @@ body {
   height: 80vmin;
   display: grid;
   grid-template-rows: repeat(29, 1fr);
-  grid-template-columns: repeat(29, 1fr);
+  grid-template-columns: repeat(40, 1fr);
 }
 
 .snake {
-  background-color: red;
-  border: 0.25vmin solid black; /* The .25vmin will make the size of it dynamic with the browser (if the browser shrinks, it's size decreases) */
+  background-color: rgb(0, 0, 0);
+  /* border: 0.25vmin solid black; The .25vmin will make the size of it dynamic with the browser (if the browser shrinks, it's size decreases) */
 }
 
 .food {
