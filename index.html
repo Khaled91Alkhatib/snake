@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake</title>
-  <style>
-    body {
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      background: url("./tropical-plants.jpeg");
-    }
+  <head>
+    <link rel="stylesheet" href="./style.css" />
 
-    #game-board {
-      background-color: rgb(36, 151, 36);
-      opacity: 0.9;
-      border-radius: 5px;
-      width: 100vmin;  /* vmin will make it dynamic fro different sized browsers */
-      height: 100vmin;
-      display: grid;
-      grid-template-rows: repeat(21, 1fr);
-      grid-template-columns: repeat(21, 1fr);
-    }
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    .snake {
-      background-color: blue;
-      border: .25vmin solid black;  /* The .25vmin will make the size of it dynamic with the browser (if the browser shrinks, it's size decreases) */
-    }
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
 
-    .food {
-      background-color: yellow;
-      border: .25vmin solid black;
-    }
-
-  </style>
-</head>
-<body>
-  <div id="game-board"></div>
-</body>
+    <title>Snake</title>
+    <!-- defer will make it load after the <body />
+    and we use "module" because we are using import and export to have multiple js files to make it easier-->
+    <script src="game.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="name">Jungle Snake</div>
+    <div class="score-and-number">
+      <div class="score">Score:</div>
+      <div id="scoreBoard">0</div>
+    </div>
+    <div id="game-board"></div>
+  </body>
 </html>
